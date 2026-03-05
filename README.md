@@ -1,29 +1,35 @@
-# Mario-Style 2D Platformer (Python)
+# Mario-Style 2D Platformer
 
-This is a Mario-inspired side-scrolling platformer built with `pygame`.
+This repo now includes:
+- Web version for GitHub Pages: `index.html` + `game.js`
+- Python desktop version: `main.py` (pygame)
 
 ## Controls
 - `Left/Right` or `A/D`: Move
 - `Up`, `W`, or `Space`: Jump
-- `R`: Reset level
+- `R`: Reset
 
 ## Asset Setup
-Put your two attached images in:
+Put your files in:
+- `asset/background.png`
+- `asset/sprite.png`
 
-`asset/`
+The web game removes pink sprite background color at runtime.
 
-Recommended names:
-- `asset/background.png` (or `.jpg`, `.jpeg`, `.webp`)
-- `asset/sprite.png` (or `.jpg`, `.jpeg`, `.webp`)
+## Play On GitHub Pages
+1. Open your repo: `https://github.com/TESVM/mario_platformer`
+2. Go to `Settings` -> `Pages`
+3. Under `Build and deployment`:
+   - `Source`: `Deploy from a branch`
+   - `Branch`: `main`
+   - `Folder`: `/ (root)`
+4. Save
+5. Wait about 1 minute, then open:
+   - `https://tesvm.github.io/mario_platformer/`
 
-The game auto-detects files and will remove pink backgrounds from the sprite image so the character renders transparently.
-
-## Run
-1. Install dependency:
-   ```bash
-   pip3 install pygame
-   ```
-2. Start:
-   ```bash
-   python3 main.py
-   ```
+## Run Desktop Python Version
+```bash
+cd /Users/tes/mario_platformer
+pip3 install -r requirements.txt
+python3 main.py
+```
